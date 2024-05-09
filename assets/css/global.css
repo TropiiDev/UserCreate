@@ -27,6 +27,7 @@ nav {
   font-family: var(--inter);
   font-size: 80%;
   padding: 4rem 1rem;
+  border-bottom: 1px solid var(--lighter-red);
 }
 
 nav a h1 {
@@ -49,8 +50,37 @@ nav li:first-child {
   text-align: center;
 }
 
-nav a {
+nav ul a {
   color: var(--white);
   text-decoration: none;
   display: block;
+  transition: 0.5s;
+}
+
+nav ul a:hover {
+  color: var(--bright-red);
+}
+
+/* media queires */
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav ul li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
+
+/* default classes */
+
+.active {
+  background-color: var(--blue);
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
 }
