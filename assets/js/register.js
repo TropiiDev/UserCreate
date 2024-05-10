@@ -8,4 +8,7 @@ submitBtn.addEventListener('click', () => {
   localStorage.setItem('email', email);
   localStorage.setItem('username', username);
   localStorage.setItem('password', password);
+  localStorage.setItem('signedIn', true);
+
+  alert(`You're account has been created ${username}`);
 });

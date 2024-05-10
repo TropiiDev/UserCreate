@@ -84,3 +84,21 @@ nav ul a:hover {
   border-radius: 5px;
   border: none;
 }
+
+.logout-btn {
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: var(--blue);
+  border: none;
+}
+
+.signed-in {
+  color: white;
+  cursor: pointer;
+}
