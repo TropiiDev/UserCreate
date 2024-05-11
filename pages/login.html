@@ -23,8 +23,8 @@
   <section class="form-section">
     <form id="login-form">
       <div class="input-group">
-        <label class="user-input-label" for="username">Username</label>
-        <input class="user-input" type="text" id="username" required>
+        <label class="user-input-label" for="email">Email</label>
+        <input class="user-input" type="text" id="email" required>
       </div>
       <div class="input-group">
         <label class="user-input-label" for="password">Password</label>
@@ -35,7 +35,8 @@
     </form>
   </section>
 
-  <script src="../assets/js/login.js"></script>
-  <script src="../assets/js/logout.js"></script>
+  <script type="module" src="/assets/js/components/firebase.js"></script>
+  <script type="module" src="/assets/js/login.js"></script>
+  <script type="module" src="/assets/js/logout.js"></script> 
 </body>
 </html>
