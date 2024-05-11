@@ -1,16 +1,16 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-
+import { apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId } from "./config";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC8Yj7yWwruN_mDNoM7PvsIfcE0dvdSeCY",
-  authDomain: "tropii-login.firebaseapp.com",
-  projectId: "tropii-login",
-  storageBucket: "tropii-login.appspot.com",
-  messagingSenderId: "730444765865",
-  appId: "1:730444765865:web:413f989ef923f49815e7b8"
+  apiKey: apiKey,
+  authDomain: authDomain,
+  projectId: projectId,
+  storageBucket: storageBucket,
+  messagingSenderId: messagingSenderId,
+  appId: appId
 };
 
 // Initialize Firebase
