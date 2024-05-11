@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-import { apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId } from "./config";
+import { apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId } from "./config.js";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
