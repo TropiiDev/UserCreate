@@ -17,17 +17,40 @@
       <li id="login-btn"><a href="/pages/login.html">Login</a></li>
       <li id="register-btn"><a href="/pages/register.html">Register</a></li>
       <li id="logout-btn" class="logout-btn">Logout</li>
-      <li class="signed-in"></li>
+      <li><a href="/pages/account.html" class="signed-in"></a></li>
     </ul>
   </nav>
 
   <section class="page">
     <h2>Manage Account</h2>
     <div class="img-container">
-      <img src="" alt="Profile Picture">
-      <input placeholder="Enter an image link" type="text" id="profile-img">
+      <h3>Profile Image</h3>
+      <div class="img-preview"></div>
+      <div class="img-inputs">
+        <label for="profile-img">Image Link</label>
+        <input type="text" id="profile-img">
+      </div>
+    </div>
+    <div class="form-container">
+      <h3>Account Information</h3>
+      <form id="account-form">
+        <div class="input-group">
+          <label class="user-input-label" for="username">Username</label>
+          <input class="user-input" type="text" id="username">
+        </div>
+        <div class="input-group">
+          <label class="user-input-label" for="email">Email</label>
+          <input class="user-input" type="email" id="email">
+        </div>
+        <button id="resetPassword" class="center reset-password">Reset Password</button>
+      </form>
+    </div>
+    
+    <button class="center submit-button" type="submit">Save Changes</button>
+      
   </section>
 
+  <script type="module" src="/assets/js/global.js"></script>
   <script type="module" src="/assets/js/account.js"></script>
   <script type="module" src="/assets/js/logout.js"></script>
 </body>

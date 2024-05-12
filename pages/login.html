@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/global.css">
+  <link rel="stylesheet" href="/assets/css/modal.css">
   <link rel="stylesheet" href="/assets/css/login.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,11 +34,34 @@
       </div>
 
       <button class="submit-button" type="submit">Login</button>
+      <button type="button" id="myBtn" class="reset-password">Forgot Password</a>
     </form>
   </section>
 
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+          <span class="close">×</span>
+          <h2>Reset Password</h2>
+      </div>
+      <div class="modal-body">
+          <p>Please enter your email</p>
+          <div class="input-group">
+            <label class="user-input-label" for="email">Email</label>
+            <input class="user-input" type="text" id="emailReset" required>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button class="submit-button" type="button" id="resetPassword">Reset Password</button>
+      </div>
+    </div>
+</div>
+
+  <script type="module" src="/assets/js/global.js"></script>
   <script type="module" src="/assets/js/login.js"></script>
   <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/logout.js"></script> 
+  <script src="/assets/js/components/modal.js"></script>
 </body>
 </html>

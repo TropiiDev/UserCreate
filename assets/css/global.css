@@ -26,9 +26,13 @@ body {
 nav {
   font-family: var(--inter);
   font-size: 80%;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   border-bottom: 1px solid var(--lighter-red);
 }
+
+nav ul li:last-child {
+  border-bottom: 1px solid var(--blue);
+ }
 
 nav a h1 {
   font-family: var(--poppins);
@@ -101,4 +105,77 @@ nav ul a:hover {
 .signed-in {
   color: white;
   cursor: pointer;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.user-input {
+  background-color: rgba(0,0,0,0);
+  border: 2px solid var(--lighter-red);
+  width: 300px;
+  border-radius: 100px;
+  padding: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  text-indent: 18px;
+  color: var(--white);
+}
+
+.user-input:focus {
+  outline: none;
+}
+
+.user-input-label {
+  color: var(--white);
+  background-color: var(--dark-red);
+  font-size: 11px;
+  position: absolute;
+  left: 20px;
+  top: -7px;
+  padding: 2px;
+}
+
+.submit-button {
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #125858;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reset-password {
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--lighter-red);
+  color: var(--white);
+  transition: 0.5s;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.reset-password:hover {
+  background-color: var(--bright-red);
+}
+
+.reset-a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 12px;
 }

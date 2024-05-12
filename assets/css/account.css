@@ -1,6 +1,89 @@
+/* page section */
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .page h2 {
-  color: white;
+  color: var(--white);
   font-size: 2rem;
   text-align: left;
+  margin: 0 auto;
+}
+
+.page h3 {
+  flex-basis: 100%;
   text-align: center;
+  color: var(--white);
+}
+
+/* img container */
+
+.img-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+
+.img-container img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  align: flex-start;
+}
+
+.img-container input {
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0);
+  width: 90%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--lighter-red);
+}
+.img-container .img-inputs {
+  position: relative;
+  width: 90%;
+  margin-bottom: 2px;
+}
+
+.img-container input:focus {
+  outline: none;
+  border: 2px solid var(--bright-red);
+}
+
+.img-container label {
+  color: var(--white);
+  background-color: var(--dark-red);
+  font-size: 11px;
+  position: absolute;
+  left: 20px;
+  top: -7px;
+  padding: 2px;
+}
+
+/* account form */
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* media queries */
+
+@media (min-width: 850px) {
+  .page {
+    display: block;
+    padding: 4rem 1rem 10rem 1rem;
+    padding-bottom: 10rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
