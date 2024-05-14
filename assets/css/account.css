@@ -8,7 +8,7 @@
 }
 
 .page h2 {
-  color: var(--white);
+  color: var(--gray);
   font-size: 2rem;
   text-align: left;
   margin: 0 auto;
@@ -17,7 +17,7 @@
 .page h3 {
   flex-basis: 100%;
   text-align: center;
-  color: var(--white);
+  color: var(--gray);
 }
 
 /* img container */
@@ -38,12 +38,12 @@
 }
 
 .img-container input {
-  color: var(--white);
+  color: var(--pink);
   background-color: rgba(0, 0, 0, 0);
   width: 90%;
   padding: 1rem;
   border-radius: 10px;
-  border: 2px solid var(--lighter-red);
+  border: 2px solid var(--purp-blue);
 }
 .img-container .img-inputs {
   position: relative;
@@ -53,12 +53,12 @@
 
 .img-container input:focus {
   outline: none;
-  border: 2px solid var(--bright-red);
+  border: 2px solid var(--lighter-purp);
 }
 
 .img-container label {
-  color: var(--white);
-  background-color: var(--dark-red);
+  color: var(--pink);
+  background-color: var(--white);
   font-size: 11px;
   position: absolute;
   left: 20px;

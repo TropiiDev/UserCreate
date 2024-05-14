@@ -4,6 +4,7 @@
   --bright-purp: #B679F2;
   --pink: #CDA7F2;
   --white: #F2F2F2;
+  --gray: #a7a7a7;
   --font-size: 1.3rem;
   --poppins: 'Poppins', sans-serif;
   --inter: 'Inter', sans-serif;
@@ -62,16 +63,33 @@ nav ul a {
   transition: 0.5s;
 }
 
-#login-btn,
-#register-btn,
-#logout-btn {
+.signed-in {
+  color: var(--bright-purp);
+  cursor: pointer;
+}
+
+.signed-in img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+
+}
+
+.logout-btn {
+  color: var(--bright-purp);
+  cursor: pointer;
+}
+
+.login-btn,
+.register-btn,
+.logout-btn {
   transition: 0.5s;
 }
 
-#login-btn:hover,
-#register-btn:hover,
-#logout-btn:hover {
-  color: var(--white);
+.login-btn:hover,
+.register-btn:hover,
+.logout-btn:hover {
+  color: white;
   padding: 1rem;
   background-color: var(--bright-purp);
   border-radius: 10px;
@@ -101,24 +119,6 @@ nav ul a {
   border: none;
 }
 
-.logout-btn {
-  color: white;
-  transition: 0.5s;
-  cursor: pointer;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.logout-btn:hover {
-  background-color: var(--blue);
-  border: none;
-}
-
-.signed-in {
-  color: white;
-  cursor: pointer;
-}
-
 .input-group {
   position: relative;
   margin-bottom: 20px;
@@ -126,14 +126,14 @@ nav ul a {
 
 .user-input {
   background-color: rgba(0,0,0,0);
-  border: 2px solid var(--lighter-red);
+  border: 2px solid var(--purp-blue);
   width: 300px;
   border-radius: 100px;
   padding: 8px;
   font-weight: 400;
   font-size: 18px;
   text-indent: 18px;
-  color: var(--white);
+  color: var(--pink);
 }
 
 .user-input:focus {
@@ -141,8 +141,8 @@ nav ul a {
 }
 
 .user-input-label {
-  color: var(--white);
-  background-color: var(--dark-red);
+  color: var(--pink);
+  background-color: var(--white);
   font-size: 11px;
   position: absolute;
   left: 20px;
@@ -154,14 +154,14 @@ nav ul a {
   padding: 1rem;
   border-radius: 50px;
   border: none;
-  background-color: var(--blue);
+  background-color: var(--lighter-purp);
   color: var(--white);
   transition: 0.5s;
   cursor: pointer;
 }
 
 .submit-button:hover {
-  background-color: #125858;
+  background-color: var(--pink);
 }
 
 .center {
@@ -174,7 +174,7 @@ nav ul a {
   padding: 1rem;
   border-radius: 50px;
   border: none;
-  background-color: var(--lighter-red);
+  background-color: var(--pink);
   color: var(--white);
   transition: 0.5s;
   margin-bottom: 50px;
@@ -183,15 +183,11 @@ nav ul a {
 }
 
 .reset-password:hover {
-  background-color: var(--bright-red);
+  background-color: var(--purp-blue);
 }
 
 .reset-a {
   color: var(--white);
   text-decoration: none;
   font-size: 12px;
-}
-
-.white:hover {
-  color: var(--white);
 }

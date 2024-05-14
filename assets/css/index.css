@@ -1,5 +1,4 @@
 .page h2 {
-  color: var(--dark-red);
-  font-size: 2rem;
-  text-align: center
+  text-align: center;
+  color: var(--gray);
 }

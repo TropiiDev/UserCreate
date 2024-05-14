@@ -19,14 +19,16 @@ onAuthStateChanged(auth, (user) => {
 
     registerBtn.style.display = 'none';
     loginBtn.style.display = 'none';
-    if (user.displayName === null) {
-      if (photoURL === null) {
+    if (photoURL === null) {
+      if (displayName === null) {
         signedInText.innerHTML = email;
       } else {
-        
+        signedInText.innerHTML = displayName;
       }
     } else {
-      signedInText.innerHTML = displayName;
+      const img = document.createElement("img");
+      img.src = photoURL;
+      signedInText.appendChild(img);
     }
     passwordResetBtn.addEventListener('click', (event) => {
       const email = user.email;
