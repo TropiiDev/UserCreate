@@ -15,11 +15,16 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     const displayName = user.displayName;
     const email = user.email;
+    const photoURL = user.photoURL;
 
     registerBtn.style.display = 'none';
     loginBtn.style.display = 'none';
     if (user.displayName === null) {
-      signedInText.innerHTML = email;
+      if (photoURL === null) {
+        signedInText.innerHTML = email;
+      } else {
+        
+      }
     } else {
       signedInText.innerHTML = displayName;
     }

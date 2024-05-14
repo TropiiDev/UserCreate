@@ -1,8 +1,8 @@
 :root {
-  --dark-red: #591C21;
-  --lighter-red: #8C1F28;
-  --bright-red: #D92525;
-  --blue: #044040;
+  --purp-blue: #4703A6;
+  --lighter-purp: #6F23D9;
+  --bright-purp: #B679F2;
+  --pink: #CDA7F2;
   --white: #F2F2F2;
   --font-size: 1.3rem;
   --poppins: 'Poppins', sans-serif;
@@ -16,7 +16,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--dark-red);
+  background-color: var(--white);
   font-size: var(--font-size);
   font-family: var(--inter);
 }
@@ -25,9 +25,9 @@ body {
 
 nav {
   font-family: var(--inter);
-  font-size: 80%;
+  font-size: 20px;
   padding: 2rem 1rem;
-  border-bottom: 1px solid var(--lighter-red);
+  border-bottom: 2px solid var(--purp-blue);
 }
 
 nav ul li:last-child {
@@ -52,17 +52,29 @@ nav ul {
 nav li:first-child {
   flex-basis: 100%;
   text-align: center;
+  border: none;
 }
 
 nav ul a {
-  color: var(--white);
+  color: var(--bright-purp);
   text-decoration: none;
   display: block;
   transition: 0.5s;
 }
 
-nav ul a:hover {
-  color: var(--bright-red);
+#login-btn,
+#register-btn,
+#logout-btn {
+  transition: 0.5s;
+}
+
+#login-btn:hover,
+#register-btn:hover,
+#logout-btn:hover {
+  color: var(--white);
+  padding: 1rem;
+  background-color: var(--bright-purp);
+  border-radius: 10px;
 }
 
 /* media queires */
@@ -178,4 +190,8 @@ nav ul a:hover {
   color: var(--white);
   text-decoration: none;
   font-size: 12px;
+}
+
+.white:hover {
+  color: var(--white);
 }
