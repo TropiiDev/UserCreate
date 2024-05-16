@@ -44,7 +44,8 @@ onAuthStateChanged(auth, (user) => {
               const data = snapshot.val();
 
               for (let key in data) {
-                console.log(typeof +key);
+                let numKey = +key;
+                console.log(numKey);
               }
             });
           } else {
