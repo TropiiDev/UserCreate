@@ -30,12 +30,17 @@ onAuthStateChanged(auth, (user) => {
       img.src = photoURL;
       signedInText.appendChild(img);
     }
-    passwordResetBtn.addEventListener('click', (event) => {
-      const email = user.email;
-      resetPassword(auth, email)
-    
-      event.preventDefault();
-    })
+    if (passwordResetBtn === null) {
+      // do nothing
+      return;
+    } else {
+      passwordResetBtn.addEventListener('click', (event) => {
+        const email = user.email;
+        resetPassword(auth, email)
+      
+        event.preventDefault();
+      })
+    }
   } else {
     logoutBtn.style.display = 'none';
 

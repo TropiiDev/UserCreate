@@ -22,10 +22,28 @@
   </nav>
 
   <section class="page">
-    <h2>Welcome to the site!</h2>
+    <h2 id="page-title">Welcome to the site!</h2>
+    <h4>Please edit your list below!</h4>
+
+    <section class="list-section">
+      <div class="list-div">
+        <ul class="list-holder">
+          <li class="list-item">List 1</li>
+        </ul>
+      </div>
+      <form id="list-form">
+        <div class="input-group">
+          <label class="user-input-label" for="list">List</label>
+          <input class="user-input" type="text" id="list" required>
+        </div>
+        <button class="submit-button" type="submit">Add</button>
+      </form>
+    </section>
+
   </section>
 
   <script type="module" src="/assets/js/global.js"></script>
+  <script type="module" src="/assets/js/index.js"></script>
   <script type="module" src="/assets/js/logout.js"></script>
 </body>
 </html>

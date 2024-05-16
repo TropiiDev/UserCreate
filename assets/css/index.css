@@ -1,4 +1,17 @@
-.page h2 {
-  text-align: center;
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: var(--gray);
+}
+
+.list-holder li {
+  text-decoration: underline;
+  list-style-type: none;
+  margin-left: 85px;
+}
+
+.submit-button {
+  margin-left: 120px;
 }
