@@ -11,10 +11,6 @@ const listName = document.querySelector('.list-name');
 const subText = document.querySelector('.subtext');
 const listForm = document.getElementById('list-form');
 
-function getListData(userId) {
-  
-}
-
 /* 
 gets the list name for the list
 use this to update list
@@ -75,6 +71,8 @@ onAuthStateChanged(auth, (user) => {
             // they do not
             listHolder.style.display = 'none';
             subText.innerHTML = 'Create a new list below!';
+            createNewList(user.uid, inputValue);
+            alert('Check the db');
           }
         }).catch((error) => {
           alert(error);
