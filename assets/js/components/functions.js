@@ -110,11 +110,9 @@ export function addNewListItem(userId, listItem) {
   };
 
   // Get a key for a new Post.
-  const newPostKey = push(child(ref(db), 'posts')).key;
 
   // Write the new post's data simultaneously in the posts list and the user's post list.
   const updates = {};
-  updates['/lists/' + newPostKey] = postData;
   updates['/lists/' + userId + '/list/list-item'] = postData;
 
   return update(ref(db), updates);
