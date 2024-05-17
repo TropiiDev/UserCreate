@@ -6,6 +6,11 @@
   color: var(--gray);
 }
 
+.list-holder {
+  background-color: var(--gray);
+  color: white;
+}
+
 .list-holder li {
   text-decoration: underline;
   list-style-type: none;

@@ -44,12 +44,17 @@ onAuthStateChanged(auth, (user) => {
   } else {
     logoutBtn.style.display = 'none';
 
-    passwordResetBtn.addEventListener('click', (event) => {
-      const email = document.getElementById('emailReset');
-      resetPassword(auth, email.value)
-      alert('Clicked button');
-      event.preventDefault();
-    })
+    if (passwordResetBtn === null) {
+      // do nothing
+      return;
+    } else {
+      passwordResetBtn.addEventListener('click', (event) => {
+        const email = document.getElementById('emailReset');
+        resetPassword(auth, email.value)
+        alert('Clicked button');
+        event.preventDefault();
+      })
+    }
   }
 })
 

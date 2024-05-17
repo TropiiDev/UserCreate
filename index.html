@@ -23,17 +23,20 @@
 
   <section class="page">
     <h2 id="page-title">Welcome to the site!</h2>
-    <h4>Please edit your list below!</h4>
+    <h4 class="subtext">Please edit your list below!</h4>
 
     <section class="list-section">
       <div class="list-div">
-        <ul class="list-holder">
-          <li class="list-item">List 1</li>
+        <ul id="list-holder" class="list-holder">
+          <li class="list-name">List Name</li>
+          <ul class="list-items">
+            <li class="list-item">List Item</li>
+          </ul>
         </ul>
       </div>
       <form id="list-form">
         <div class="input-group">
-          <label class="user-input-label" for="list">List</label>
+          <label class="user-input-label" for="list">Create New List</label>
           <input class="user-input" type="text" id="list" required>
         </div>
         <button class="submit-button" type="submit">Add</button>
