@@ -27,7 +27,7 @@ body {
 nav {
   font-family: var(--inter);
   font-size: 20px;
-  padding: 2rem 1rem;
+  padding: 1rem;
   border-bottom: 2px solid var(--purp-blue);
 }
 

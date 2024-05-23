@@ -1,4 +1,4 @@
-.page {
+.intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,17 +6,23 @@
   color: var(--gray);
 }
 
-.list-holder {
-  background-color: var(--gray);
+.selection {
+  background-color: black;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: row wrap;
 }
 
-.list-holder li {
-  text-decoration: underline;
+.selection ul {
   list-style-type: none;
-  margin-left: 85px;
-}
-
-.submit-button {
-  margin-left: 120px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  flex-basis: 100%;
+  align-items: center;
+  gap: 2rem;
+  border-right: 2px solid var(--bright-purp); /* Change 'black' to any color you want */
+  height: 100%; /* Adjust as needed */
 }
