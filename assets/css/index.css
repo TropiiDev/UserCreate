@@ -7,12 +7,13 @@
 }
 
 .selection {
-  background-color: black;
-  color: white;
+  background-color: var(--white);
+  color: gray;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: row wrap;
+  font-size: 12px;
 }
 
 .selection ul {
@@ -20,9 +21,13 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  flex-basis: 100%;
   align-items: center;
   gap: 2rem;
-  border-right: 2px solid var(--bright-purp); /* Change 'black' to any color you want */
-  height: 100%; /* Adjust as needed */
+  padding-right: 30px;
+  border-right: 4px solid var(--bright-purp);
+  height: 100%;
+}
+
+.selection ul:last-child {
+  border-right: none;
 }
