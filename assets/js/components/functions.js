@@ -117,3 +117,10 @@ export function addNewListItem(userId, listItem) {
 
   return update(ref(db), updates);
 }
+
+export async function getRandomWords(amount) {
+  const URL = `https://random-word-api.herokuapp.com/word?number=${amount}`;
+  const res = await fetch(URL);
+  const data = await res.json();
+  return data;
+}

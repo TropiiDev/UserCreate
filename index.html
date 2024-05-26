@@ -28,12 +28,12 @@
       </ul>
       <div class="sidebar"></div>
       <ul class="mode-selector">
-        <li class="mode">timed</li>
-        <li class="mode">words</li>
-        <li class="mode">custom</li>
-        <li class="mode">sentences</li>
+        <li class="mode active" id="timed">timed</li>
+        <li class="mode" id="words">words</li>
+        <li class="mode" id="custom">custom</li>
+        <li class="mode" id="sentences">sentences</li>
       </ul>
-      <ul class="numbers">
+      <ul id="numbers">
         <li>10</li>
         <li>15</li>
         <li>20</li>
@@ -42,11 +42,8 @@
     </section>
 
     <section class="game">
-      <div class="game-container">
-        <ul>
-          <li class="word"></li>
-        </ul>
-      </div>
+      <div class="game-container"></div>
+    </section>
 
   <script type="module" src="/assets/js/global.js"></script>
   <script type="module" src="/assets/js/index.js"></script>
